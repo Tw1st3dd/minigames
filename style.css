@@ -1,0 +1,33 @@
+body{
+    background-color: white;
+    color: black;
+}
+
+#doboz{
+    background-color: gray;
+    margin: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+table{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    
+}
+
+td{
+    border: solid;
+}
+
+td:hover{
+    background-color: aqua;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-image: url(jatekok_javascript\kepek\circle.jpg);
+}

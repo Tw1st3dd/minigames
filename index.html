@@ -1,106 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ASD</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
-<script>
-  function Amoba() {
-
-    const nyero_mintak = [[1, 1, 1, 0, 0, 0, 0, 0, 0,],
-                          [0, 0, 0, 1, 1, 1, 0, 0, 0,],
-                          [0, 0, 0, 0, 0, 0, 1, 1, 1,],
-                          [1, 0, 0, 1, 0, 0, 1, 0, 0,],
-                          [0, 1, 0, 0, 1, 0, 0, 1, 0,],
-                          [0, 0, 1, 0, 0, 1, 0, 0, 1,],
-                          [1, 0, 0, 0, 1, 0, 0, 0, 1,],
-                          [0, 0, 1, 0, 1, 0, 1, 0, 0,],
-                          [2, 2, 2, 0, 0, 0, 0, 0, 0,],
-                          [0, 0, 0, 2, 2, 2, 0, 0, 0,],
-                          [0, 0, 0, 0, 0, 0, 2, 2, 2,],
-                          [2, 0, 0, 2, 0, 0, 2, 0, 0,],
-                          [0, 2, 0, 0, 2, 0, 0, 2, 0,],
-                          [0, 0, 2, 0, 0, 2, 0, 0, 2,],
-                          [2, 0, 0, 0, 2, 0, 0, 0, 2,],
-                          [0, 0, 2, 0, 2, 0, 2, 0, 0,],
-                        ]
-    let jatekos_jon = 0
-
-    let kocka1 = document.getElementById('kocka1')
-    let kocka2 = document.getElementById('kocka2')
-    let kocka3 = document.getElementById('kocka3')
-    let kocka4 = document.getElementById('kocka4')
-    let kocka5 = document.getElementById('kocka5')
-    let kocka6 = document.getElementById('kocka6')
-    let kocka7 = document.getElementById('kocka7')
-    let kocka8 = document.getElementById('kocka8')
-    let kocka9 = document.getElementById('kocka9')
-
-
-
-    if (value == 1) {
-        akkor kocka1
-    }
-
-    else if (value == 2) {
-        akkor kocka2
-    }
-
-  }
-</script>
-
 <body>
-  <div id="doboz">
-    <table>
-      <tr>
-        <td>
-          <button id="kocka1" onclick="Amoba()" value="1"></button>
-        </td>
+    <p id="szoveg">Találd ki a számot! (1-99)</p>
 
-        <td>
-          <button id="kocka2" onclick="Amoba()" value="2"></button>
-        </td>
+    <br><button onclick="valamií()">
+        Gomb
+    </button>
 
-        <td>
-          <button id="kocka3" onclick="Amoba()" value="3"></button>
-        </td>
+    <input type="number" id = "tipp">
 
-      </tr>
+    <script>
+        function valamií(){
+            const szoveg = document.getElementById("szoveg");
+            let szam = Math.floor(Math.random()*98) + 1;
+            let tipp = document.getAnimations("tipp").value;
+            alert(szam);
 
-      <tr>
-        <td>
-          <button id="kocka4" onclick="Amoba()" value="4"></button>
-        </td>
-
-        <td>
-          <button id="kocka5" onclick="Amoba()" value="5"></button>
-        </td>
-
-        <td>
-          <button id="kocka6" onclick="Amoba()" value="6"></button>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <button id="kocka7" onclick="Amoba()" value="7"></button>
-        </td>
-        <td>
-          <button id="kocka8" onclick="Amoba()" value="8"></button>
-        </td>
-        <td>
-          <button id="kocka9" onclick="Amoba()" value="9"></button>
-        </td>
-      </tr>
-
-    </table>
+            if(tipp != szam){
+                szoveg.textContent
+            }
+        }
+        
+    </script>
 
 
-  </div>
 </body>
-
 </html>

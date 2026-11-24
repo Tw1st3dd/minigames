@@ -19,33 +19,33 @@
     </button>
 
     <script>
+        const szam = Math.floor(Math.random() * 98) + 1;
         function SzamKitalalo() {
-            const szam = 0;
             const szoveg = document.getElementById("szoveg");
             const tippek_szoveg = document.getElementById('tippek_szoveg');
 
-            let tipp = document.getAnimations("tipp").value;
+            let tipp = document.getElementById("tipp").value;
             let tippek = [0];
 
+            alert(szam);
 
+            if (szam == 0) {
+                
 
-            let nyero_szam = localStorage.setItem('nyero_szam', szam);
-
-
-            if (nyero_szam == 0) {
-                const szam = Math.floor(Math.random() * 98) + 1;
-
-                alert(1);
+                alert(szam = 0);
                 alert(szam);
             }
 
             if (tipp != szam) {
                 szoveg.textContent = "Helytelen tipp, próbáld újra!";
 
-                alert(szam);
-
                 tippek.push(tipp);
-                tippek_szoveg.textContent = "Tippek : " + tippek;
+                tippek_szoveg.textContent = "Tippek : ";
+                for(let i = 0; i < tippek.length; i++)
+                {
+                    tippek.szoveg.textContent +=  tippek + "; ";
+                }
+                
 
             }
             else if (tipp == szam)
